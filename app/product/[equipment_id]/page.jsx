@@ -1,7 +1,7 @@
 import EmployeeCard from '@/components/EmployeeCard';
 
 async function getProduct(equipment_id) {
-    const apiUrl = process.env.API_URL;
+    const apiUrl = "http://127.0.0.1:8000";
     const res = await fetch(`${apiUrl}/api/products/${equipment_id}`);
     if (!res.ok) {
         throw new Error('Failed to fetch product');
