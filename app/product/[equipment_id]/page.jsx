@@ -1,7 +1,7 @@
 import EmployeeCard from '@/components/EmployeeCard';
 
 async function getProduct(equipment_id) {
-    const apiUrl = "https://9745-104-129-159-229.ngrok-free.app";
+    const apiUrl = " https://c986-207-161-49-100.ngrok-free.app";
     // const apiUrl = "http://localhost:8000";
     const res = await fetch(`${apiUrl}/api/products/${equipment_id}`);
     if (!res.ok) {
